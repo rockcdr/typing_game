@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Typing Game</h1>
+    <p>Type the falling words before they touch the ground!</p>
+    <div id="game-area">
+      <div id="words-container"></div>
+    </div>
+    <input type="text" id="word-input" placeholder="Start typing..." autofocus>
+    <div class="controls">
+      <label for="speed">Speed:</label>
+      <input type="number" id="speed" min="1" max="10" value="1">
+      <button id="pause-btn">Pause</button>
+    </div>
+    <p>Score: <span id="score">0</span></p>
+    <p>Time Left: <span id="timer">60</span>s</p>
+    <p>Words/Second: <span id="words-per-second">0</span></p>
+    <p>Failures: <span id="failures">0</span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
